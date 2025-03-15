@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at top, #e66465, transparent),
+                radial-gradient(ellipse at bottom, gold, transparent);}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 30px;
+}
+
+h1 {
+    background-color: white;
+    color: #e66465;
+    font-family: "Montserrat";
+    padding: 10px;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 1px 2px 15px #974141;
+}
+
+ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: fit-content;
+    padding: 20px;
+    gap: 20px;
+}
+
+li {
+    width: 100%;
+    background-color: rgb(253, 246, 240);
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat";
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 0 5px #974141;
+    border-radius: 15px;
+}
+
+li:hover {
+    background-color: rgb(255, 223, 195);
+}
+
+button {
+    font-family: "Montserrat";
+    background: linear-gradient(0deg, lightgray, rgb(146, 146, 146));
+    padding: 10px;
+    border: .2px solid black;
+    border-radius: 7.5px;
+    box-shadow: 0 0 15px gray;
+    margin: 30px 0;
+}
+
+button:hover {
+    background: linear-gradient(0deg, rgb(241, 241, 153), lightsalmon);
+    font-weight: 500;
+    border: .2px solid orange;
+    box-shadow: 0 0 5px black;
+}
