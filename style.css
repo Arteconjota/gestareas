@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
 }
 
 body {
@@ -20,13 +21,40 @@ main {
     padding-top: 30px;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 h1 {
+    width: 70%;
+    height: auto;
+    text-align: center;
     background-color: white;
     color: #e66465;
     font-family: "Montserrat";
     padding: 10px;
     border-radius: 20px 0 20px 0;
     box-shadow: 1px 2px 15px #974141;
+    margin-top: 30px;
+}
+
+#agregarTarea {
+    width: 90%;
+    height: auto;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#listaTareas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
 }
 
 ul {
@@ -56,13 +84,12 @@ li:hover {
 }
 
 button {
-    font-family: "Montserrat";
     background: linear-gradient(0deg, lightgray, rgb(146, 146, 146));
     padding: 10px;
     border: .2px solid black;
     border-radius: 7.5px;
     box-shadow: 0 0 15px gray;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 button:hover {
@@ -70,4 +97,68 @@ button:hover {
     font-weight: 500;
     border: .2px solid orange;
     box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    border: gold 1px solid;
+    box-shadow: 0 0 20px gold;
+    background-color: beige;
+}
+
+.tarea:hover {
+    font-weight: bold;
+    background-color: rgb(255, 232, 155);
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+}
+
+.delete {
+    padding: 10px;
+    background-color: crimson;
+    color: white;
+    border-radius: 20px;
+}
+
+.delete:hover {
+    background-color: darkred;
+}
+
+.check {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+}
+
+.check:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+#mensaje {
+    display: none;
+    flex-wrap: nowrap;
+    text-align: center;
+    background-color: antiquewhite;
+    justify-content: center;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto;
+    box-shadow: 1px 1px 1px;
+    font-family: monospace;
+    font-size: 1.25em;
 }

@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de lista de tareas</title>
-    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Gestor de tareas</title>
 </head>
+
 <body>
+    <header>
+        <h1 title="Cabecera para el gestor de tareas">Gestor de tareas</h1>
+    </header>
     <main>
-        <h1>Listado de tareas</h1>
-        <button id="agregarTarea" onclick="creatingTasks(), changeDisplay()">Añadir tarea</button>
-        <ul id="tareas"></ul>
+        <button id="agregarTarea" title="Haz click para añadir una tarea">Agregar tarea</button>
+        <div id="listaTareas" title="Listado de tareas"></div>
+        <div id="mensaje"></div>
     </main>
 </body>
+
 </html>
